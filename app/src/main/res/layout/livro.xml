@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/book_border">
+
+    <TextView
+        android:id="@+id/livro_titulo"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:background="@drawable/attribute_borders"
+        android:text="Titulo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/livro_autor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/livro_tipo"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:background="@drawable/attribute_borders"
+        android:text="tipo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/livro_lido"
+        app:layout_constraintTop_toBottomOf="@+id/livro_ultima_pagina" />
+
+    <TextView
+        android:id="@+id/livro_autor"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:background="@drawable/attribute_borders"
+        android:text="autor"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/livro_titulo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/livro_numero_de_paginas"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:background="@drawable/attribute_borders"
+        android:text="n.paginas"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/livro_ultima_pagina"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livro_titulo" />
+
+    <TextView
+        android:id="@+id/livro_ultima_pagina"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:background="@drawable/attribute_borders"
+        android:text="ultima pagina"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/livro_numero_de_paginas"
+        app:layout_constraintTop_toBottomOf="@+id/livro_autor" />
+
+    <TextView
+        android:id="@+id/livro_lido"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:background="@drawable/attribute_borders"
+        android:text="lido"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/livro_tipo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livro_numero_de_paginas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
